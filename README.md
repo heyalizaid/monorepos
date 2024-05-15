@@ -72,21 +72,10 @@ export default Button;
 ### 7. **Using Shared Components in Admin Panel**
 Modify the `package.json` in the admin directory to include a path to the shared directory for easier imports.
 
-```json
-// /admin/package.json
+```
+//  /admin/package.json
 {
-  "name": "admin",
-  "version": "0.1.0",
-  // ...
-  "dependencies": {
-    // ...
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  ...
   "jest": {
     "moduleDirectories": ["node_modules", "src", "../shared"]
   }
@@ -98,7 +87,7 @@ Then, import and use the shared Button component in the admin app.
 ### 8. **Using Shared Components in Next.js Website**
 Similarly, configure the Next.js `jsconfig.json` to include the shared directory.
 
-```json
+```
 // /website/jsconfig.json
 {
   "compilerOptions": {
